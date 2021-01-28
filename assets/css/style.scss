@@ -1,0 +1,231 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #F2E9D9;
+    font-family: "poppins" , 'Segoe UI', Tahoma, Verdana, sans-serif;
+    overflow-x: hidden;
+  }
+  section{
+      padding: 40px 0;
+  }
+  .wrapper{
+    max-width: 2000px !important;
+    padding: 0 90px;
+  }
+
+.hero-sec{
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+.intro {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    width: 90%;
+}
+.intro h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+.intro p {
+    width: 50%;
+}
+.intro a.link {
+    text-decoration: none;
+}
+
+.m_scroll_arrows
+{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  
+  width: 10px;
+  height: 10px;
+  margin: 5px auto;
+}
+.unu
+{
+  padding-top: 10px;
+}
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+}
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  margin-top: -3px;
+}
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  margin-top: -3px;
+}
+@-webkit-keyframes mouse-scroll {
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+.hero-sec .blobs{
+    .blob-baige{
+        position: absolute;
+        top: -80px;
+        left: 20%;
+        border-radius:61% 39% 64% 36% / 34% 67% 33% 66%;
+        height: 380px;
+        width: 430px;
+        background-color: #F6BD95;
+        z-index: -1;
+        transform: rotate(-5deg) scale(1);
+        animation: 5s breathe infinite;
+    
+    }
+    .blob-teal{
+        position: absolute;
+        bottom: -80px;
+        left: -100px;
+        border-radius: 60% 40% 54% 46% / 42% 35% 65% 58% ;
+        height: 360px;
+        width: 450px;
+        background-color: #3BE6D9;
+        z-index: -1;
+        transform: rotate(-5deg) scale(1);
+        animation: 5s breathe infinite;
+    }
+    .blob-pink{
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        border-radius: 60% 40% 54% 46% / 42% 35% 65% 58% ;
+        height: 280px;
+        width: 300px;
+        background-color: #d62956;
+        z-index: -1;
+        transform: rotate(-5deg) scale(1);
+        animation: 5s breathe infinite;
+    }
+    .blob-yellow{
+        position: absolute;
+        bottom: -10px;
+        right: -30px;
+        border-radius: 56% 44% 60% 40% / 56% 56% 44% 44%  ;
+        height: 320px;
+        width: 400px;
+        background-color: #FFCC2A;
+        z-index: -1;
+        transform: rotate(-5deg) scale(1);
+        animation: 5s breathe infinite;
+    }
+}
+@keyframes breathe {
+    50%  { transform:rotate(-5deg) scale(1.08) }
+}
+
+.about-sec{
+    
+}
+
+
+
+
+
+@media(max-width:780px){
+    .wrapper{
+      padding: 0 20px;
+    }
+   .hero-sec{
+        overflow: hidden;
+        .blobs{
+            .blob-baige{
+                top: 130px;
+                left: -50px;
+                height: 200px;
+                width: 250px;
+            }
+            .blob-teal{
+                bottom: 8%;
+                left: -50px;
+                height: 200px;
+                width: 250px;
+            }
+            .blob-pink{
+                top: -30px;
+                right: -70px;
+                height: 180px;
+                width: 230px;
+            }
+            .blob-yellow{
+                top: 42%;
+                right: -150px;
+                height: 200px;
+                width: 300px;
+            }
+        }
+    }
+
+    .intro{
+        h1{
+            font-size: 40px;
+        }    
+        h4{
+            font-size: 22px;
+        }    
+        p{
+            width: 100%;
+        }
+        a.link {
+            text-decoration: none;
+        }
+    }
+    
+    
+}
