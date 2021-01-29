@@ -4,10 +4,36 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   background-color: #ffffff00;
   z-index: 1;
 }
+
+header.scrolled {
+  padding: 10px 0 !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+header.scrolled .logo img {
+  -webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  height: 50px;
+}
+
+header.scrolled label {
+  -webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  margin-bottom: -8px;
+}
+header.scrolled label h5{
+  -webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  font-size: 16px !important;
+}
+
+
 #navcheck {
     position: fixed;
     opacity: 0;
