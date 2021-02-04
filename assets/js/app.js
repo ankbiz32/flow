@@ -13,7 +13,7 @@ $('.feedback-container').owlCarousel({
     loop:true,
     dots:false,
     autoplay:true,
-    autoplayTimeout:3000,
+    autoplayTimeout:5000,
     autoplayHoverPause:true,
     navText: ["<i class='fas fa-caret-left'></i>","<i class='fas fa-caret-right'></i>"],
     responsive:{

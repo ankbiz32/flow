@@ -153,8 +153,8 @@ section {
   z-index: -1;
   -webkit-transform: rotate(-5deg) scale(1);
           transform: rotate(-5deg) scale(1);
-  -webkit-animation: 5s breathe infinite;
-          animation: 5s breathe infinite;
+  -webkit-animation: 10s breathe infinite;
+          animation: 10s breathe infinite;
 }
 
 .hero-sec .blobs .blob-teal {
@@ -168,8 +168,8 @@ section {
   z-index: -1;
   -webkit-transform: rotate(-5deg) scale(1);
           transform: rotate(-5deg) scale(1);
-  -webkit-animation: 5s breathe infinite;
-          animation: 5s breathe infinite;
+  -webkit-animation: 10s breathe infinite;
+          animation: 10s breathe infinite;
 }
 
 .hero-sec .blobs .blob-pink {
@@ -183,8 +183,8 @@ section {
   z-index: -1;
   -webkit-transform: rotate(-5deg) scale(1);
           transform: rotate(-5deg) scale(1);
-  -webkit-animation: 5s breathe infinite;
-          animation: 5s breathe infinite;
+  -webkit-animation: 10s breathe infinite;
+          animation: 10s breathe infinite;
 }
 
 .hero-sec .blobs .blob-yellow {
@@ -198,8 +198,8 @@ section {
   z-index: -1;
   -webkit-transform: rotate(-5deg) scale(1);
           transform: rotate(-5deg) scale(1);
-  -webkit-animation: 5s breathe infinite;
-          animation: 5s breathe infinite;
+  -webkit-animation: 10s breathe infinite;
+          animation: 10s breathe infinite;
 }
 
 @-webkit-keyframes breathe {
@@ -234,8 +234,8 @@ section {
   border-radius: 51% 49% 54% 46% / 50% 60% 40% 50%;
   padding: 140px 100px;
   color: white;
-  -webkit-animation: 3s breathe2 infinite;
-          animation: 3s breathe2 infinite;
+  -webkit-animation: 5s breathe2 infinite;
+          animation: 5s breathe2 infinite;
 }
 
 .about-sec .content-con .content h2 {
@@ -249,13 +249,13 @@ section {
 
 @-webkit-keyframes breathe2 {
   50% {
-    border-radius: 48% 46% 50% 41% / 48% 55% 35% 50%;
+    border-radius: 65% 55% 62% 59% / 56% 62% 46% 70%;
   }
 }
 
 @keyframes breathe2 {
   50% {
-    border-radius: 48% 46% 50% 41% / 48% 55% 35% 50%;
+    border-radius: 65% 55% 62% 59% / 56% 62% 46% 70%;
   }
 }
 
@@ -280,12 +280,14 @@ section {
 
 .events-sec .heading .sec-btn {
   color: black !important;
+  border: none !important;
   border: 1px solid black;
   padding: 5px 10px;
+  background-color: white;
 }
 
 .events-sec .heading .sec-btn:hover {
-  border-color: white;
+  background-color: transparent;
 }
 
 .events-sec .content {
@@ -348,12 +350,14 @@ section {
 
 .gallery-sec .heading .sec-btn {
   color: black !important;
+  border: none !important;
   border: 1px solid black;
   padding: 5px 10px;
+  background-color: white;
 }
 
 .gallery-sec .heading .sec-btn:hover {
-  border-color: white;
+  background-color: transparent;
 }
 
 .gallery-sec .content img {
@@ -515,6 +519,33 @@ section {
   margin-right: 20px;
 }
 
+.feedbacks-sec .owl-carousel .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedbacks-sec .feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  /* margin-bottom: 80px; */
+  /*This is optional*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .contact-sec {
   position: relative;
 }
@@ -542,16 +573,17 @@ section {
 }
 
 .contact-sec .form-con form button.btn {
-  background-color: #3BE6D9;
+  background-color: #00574F;
   font-size: 14px;
   font-weight: 600;
   padding-top: 8px;
-  border: 1px solid #3BE6D9;
+  color: white;
+  border: 1px solid #00574F;
 }
 
 .contact-sec .form-con form button.btn:hover {
   background-color: transparent;
-  color: #3BE6D9;
+  color: #00574F;
 }
 
 .contact-sec .image {
@@ -633,7 +665,8 @@ section {
 
 .newsletter .input-grp button {
   border: none;
-  background-color: #3BE6D9;
+  background-color: #00574F;
+  color: white;
   padding: 0 25px;
   outline: none;
   font-weight: 600;
@@ -695,6 +728,12 @@ footer hr {
   border-top: 1px solid #ffffff33;
 }
 
+.hero-sec.sub-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+}
+
 @media (max-width: 780px) {
   .wrapper {
     padding: 0 20px;
@@ -742,9 +781,15 @@ footer hr {
     padding-top: 20px;
     margin-top: 0;
   }
+  .about-sec .content-con {
+    padding: 0;
+    padding-top: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .about-sec .content-con .content {
-    border-radius: 41% 39% 54% 46% / 30% 30% 40% 50%;
-    padding: 90px 30px 120px 60px;
+    border-radius: 52% 73% 64% 57% / 51% 46% 46% 36%;
+    padding: 90px 30px 80px 60px;
     color: white;
   }
   .about-sec .content-con .content h2 {
@@ -755,12 +800,12 @@ footer hr {
   }
   @-webkit-keyframes breathe2 {
     50% {
-      border-radius: 38% 35% 50% 40% / 25% 22% 45% 45%;
+      border-radius: 59% 79% 78% 57% / 62% 55% 56% 46%;
     }
   }
   @keyframes breathe2 {
     50% {
-      border-radius: 38% 35% 50% 40% / 25% 22% 45% 45%;
+      border-radius: 59% 79% 78% 57% / 62% 55% 56% 46%;
     }
   }
   .events-sec .heading {
@@ -783,6 +828,7 @@ footer hr {
             transform: scale(1);
     font-size: 35px;
     margin: 0;
+    margin-right: 20px;
   }
   .events-sec .heading .sec-btn {
     margin-top: 5px;
@@ -839,6 +885,7 @@ footer hr {
             transform: scale(1);
     font-size: 35px;
     margin: 0;
+    margin-right: 20px;
   }
   .gallery-sec .heading .sec-btn {
     margin-top: 5px;

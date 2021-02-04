@@ -144,7 +144,7 @@ section{
         background-color: #F6BD95;
         z-index: -1;
         transform: rotate(-5deg) scale(1);
-        animation: 5s breathe infinite;
+        animation: 10s breathe infinite;
     
     }
     .blob-teal{
@@ -157,7 +157,7 @@ section{
         background-color: #3BE6D9;
         z-index: -1;
         transform: rotate(-5deg) scale(1);
-        animation: 5s breathe infinite;
+        animation: 10s breathe infinite;
     }
     .blob-pink{
         position: absolute;
@@ -169,7 +169,7 @@ section{
         background-color: #d62956;
         z-index: -1;
         transform: rotate(-5deg) scale(1);
-        animation: 5s breathe infinite;
+        animation: 10s breathe infinite;
     }
     .blob-yellow{
         position: absolute;
@@ -181,7 +181,7 @@ section{
         background-color: #FFCC2A;
         z-index: -1;
         transform: rotate(-5deg) scale(1);
-        animation: 5s breathe infinite;
+        animation: 10s breathe infinite;
     }
 }
 @keyframes breathe {
@@ -208,12 +208,12 @@ section{
                 color: #ddd;
                 font-weight: 300;
             }
-            animation: 3s breathe2 infinite;
+            animation: 5s breathe2 infinite;
         }
     }
  
     @keyframes breathe2 {
-        50%  { border-radius: 48% 46% 50% 41% / 48% 55% 35% 50% ; }
+        50%  { border-radius: 65% 55% 62% 59% / 56% 62% 46% 70% ; }
     }
 
 
@@ -234,10 +234,12 @@ section{
         }
         .sec-btn{
             color: black !important;
+            border: none !important;
             border: 1px solid black;
             padding: 5px 10px;
+            background-color: white;
             &:hover{
-                border-color: white;
+                background-color: transparent;
             }
         }
     }
@@ -290,10 +292,12 @@ section{
         }
         .sec-btn{
             color: black !important;
+            border: none !important;
             border: 1px solid black;
             padding: 5px 10px;
+            background-color: white;
             &:hover{
-                border-color: white;
+                background-color: transparent;
             }
         }
     }
@@ -439,6 +443,17 @@ section{
     .owl-nav .owl-prev {
         margin-right: 20px;
     }
+    .owl-carousel .owl-stage{display: flex;}
+    .feedback {
+        display: flex;
+        flex: 1 0 auto;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        /* margin-bottom: 80px; *//*This is optional*/
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 
 .contact-sec{
@@ -462,14 +477,15 @@ section{
                 }
             }
             button.btn{
-                background-color: #3BE6D9;
+                background-color: #00574F;
                 font-size: 14px;
                 font-weight: 600;
                 padding-top: 8px;
-                border: 1px solid #3BE6D9;
+                color: white;
+                border: 1px solid #00574F;
                 &:hover{
                     background-color: transparent;
-                    color: #3BE6D9;
+                    color: #00574F;
                 }
             }
         }
@@ -532,7 +548,8 @@ section{
         }
         button{
             border: none;
-            background-color: #3BE6D9;
+            background-color: #00574F;
+            color: white;
             padding: 0 25px;
             outline: none;
             font-weight: 600;
@@ -586,6 +603,11 @@ footer{
     }
 }
 
+.hero-sec.sub-page{
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
 
 
 @media(max-width:780px){
@@ -640,9 +662,13 @@ footer{
        padding-top: 20px;
        margin-top: 0;
         .content-con{
+            padding: 0;
+            padding-top: 50px;
+            box-sizing: border-box;
             .content{
-                border-radius: 41% 39% 54% 46% / 30% 30% 40% 50%;
-                padding: 90px 30px 120px 60px;
+                // border-radius: 41% 39% 54% 46% / 30% 30% 40% 50%;
+                border-radius: 52% 73% 64% 57% / 51% 46% 46% 36%;
+                padding: 90px 30px 80px 60px;
                 color: white;
                 h2{
                     font-size: 30px;
@@ -653,7 +679,7 @@ footer{
             }
         }
         @keyframes breathe2 {
-            50%  { border-radius: 38% 35% 50% 40% / 25% 22% 45% 45%; }
+            50%  { border-radius: 59% 79% 78% 57% / 62% 55% 56% 46%; }
         }
    }
 
@@ -668,6 +694,7 @@ footer{
                 transform:scale(1);
                 font-size: 35px;
                 margin: 0;
+                margin-right: 20px;
             }
             .sec-btn{
                 margin-top: 5px;
@@ -714,6 +741,7 @@ footer{
                 transform:scale(1);
                 font-size: 35px;
                 margin: 0;
+                margin-right: 20px;
             }
             .sec-btn{
                 margin-top: 5px;
