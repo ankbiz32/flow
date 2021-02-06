@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -938,7 +939,14 @@ footer hr {
 
 .program {
   margin-top: 100px;
-  margin-bottom: 300px;
+  margin-bottom: 150px;
+  /* Container around content */
+  /* The circles on the timeline */
+  /* Add arrows to the left contain (pointing right) */
+  /* Add arrows to the right contain (pointing left) */
+  /* Fix the circle for contains on the right side */
+  /* The actual content */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
 }
 
 .program .overview {
@@ -975,6 +983,22 @@ footer hr {
   border-radius: 48% 52% 53% 47% / 51% 58% 42% 49%;
   -webkit-animation: 5s breathe3 infinite;
           animation: 5s breathe3 infinite;
+}
+
+.program .intends {
+  position: relative;
+}
+
+.program .intends .blob {
+  position: absolute;
+  top: 20%;
+  right: -200px;
+  height: 400px;
+  width: 500px;
+  background-color: #F6BD95;
+  border-radius: 63% 37% 53% 47% / 35% 30% 70% 65%;
+  -webkit-animation: 10s zoomer infinite;
+          animation: 10s zoomer infinite;
 }
 
 .program img {
@@ -1052,6 +1076,118 @@ footer hr {
 
 .program .air .col-4 .bg-blob.reflect {
   background-color: #d62956;
+}
+
+.program .air .col-4::after {
+  content: '→';
+  position: absolute;
+  top: 0%;
+  right: 45px;
+  font-size: 80px;
+  -webkit-transform: translate(100%, 50%);
+          transform: translate(100%, 50%);
+}
+
+.program .air .col-4.reflect-con {
+  color: white;
+}
+
+.program .air .col-4.reflect-con::after {
+  display: none;
+}
+
+.program .how {
+  margin-top: 180px;
+  margin-bottom: 80px;
+}
+
+.program .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.program .timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -2;
+}
+
+.program .contain {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.program .contain::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -5px;
+  background-color: white;
+  border: 2px solid #FF9F55;
+  top: 25px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.program .left {
+  left: 0;
+}
+
+.program .right {
+  left: 50%;
+}
+
+.program .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: -1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.program .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: -1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.program .right::after {
+  left: -9px;
+}
+
+.program .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 780px) {
+  .program {
+    /* Place the timelime to the left */
+  }
 }
 
 @media (max-width: 780px) {
@@ -1443,6 +1579,105 @@ footer hr {
   }
   .contact-hero-sec + .contact-sec {
     margin-top: 0px;
+  }
+  .program {
+    margin-top: 120px;
+    margin-bottom: 130px;
+  }
+  .program .overview {
+    margin-bottom: 50px;
+  }
+  .program .overview .heading h3 {
+    padding: 60px 0;
+  }
+  .program .overview .heading .bg-blob {
+    height: 150%;
+    width: 50%;
+    -webkit-animation: 15s breathe3 infinite;
+            animation: 15s breathe3 infinite;
+  }
+  .program .overview p {
+    margin-top: 60px !important;
+  }
+  .program .intends .blob {
+    top: 30%;
+    right: -130px;
+    height: 320px;
+    width: 350px;
+  }
+  .program .intends ul {
+    padding-left: 20px;
+  }
+  .program .approach {
+    margin-bottom: 20px;
+  }
+  .program .approach .heading {
+    padding: 90px 20px;
+  }
+  .program .approach .heading h3 {
+    font-weight: 600;
+  }
+  .program .approach .heading .bg-blob {
+    width: 85%;
+    -webkit-animation: 15s breathe3 infinite;
+            animation: 15s breathe3 infinite;
+  }
+  .program .approach p {
+    margin-top: 80px;
+  }
+  .program .air {
+    margin-top: 0px;
+  }
+  .program .air .col-4 {
+    font-size: 14px;
+    position: relative;
+    padding: 80px 0;
+    font-weight: 600;
+  }
+  .program .air .col-4 .bg-blob {
+    width: 98%;
+    height: 80%;
+  }
+  .program .air .col-4::after {
+    top: 2%;
+    right: 20px;
+    font-size: 35px;
+    -webkit-transform: translate(100%, 50%);
+            transform: translate(100%, 50%);
+  }
+  .program .how {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .program img {
+    width: 100%;
+  }
+  .program .timeline::after {
+    left: 25px;
+  }
+  .program .timeline .contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .program .timeline .contain::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .program .timeline .left::after, .program .timeline .right::after {
+    left: 15px;
+  }
+  .program .timeline .right {
+    left: 0%;
+  }
+  .program .timeline .content {
+    font-size: 12px;
+  }
+  .program .timeline h5 {
+    margin-top: 5px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
