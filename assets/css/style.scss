@@ -3,6 +3,9 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none !important;
+}
 body {
     background: #F2E9D9;
     font-family: "poppins" , 'Segoe UI', Tahoma, Verdana, sans-serif;
