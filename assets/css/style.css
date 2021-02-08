@@ -321,7 +321,9 @@ section {
   opacity: 0.8;
 }
 
-.events-sec .content a.sec-btn {
+.events-sec .content .sec-btn {
+  outline: none !important;
+  border: none;
   margin-bottom: 20px !important;
   color: black;
   border-color: black;
@@ -329,7 +331,7 @@ section {
   font-size: 12px;
 }
 
-.events-sec .content a.sec-btn:hover {
+.events-sec .content .sec-btn:hover {
   border-color: white;
 }
 

@@ -35,12 +35,12 @@ $('.feedback-container').owlCarousel({
     }
 })
 
-var cls='';
-$(".detail-btn").on("click", function() {
-    cls = $(this).parent('.content').attr('class');
-    $(this).parent('.content').addClass("open");
-});
+// var cls='';
+// $(".detail-btn").on("click", function() {
+//     cls = $(this).parent('.content').attr('class');
+//     $(this).parent('.content').addClass("open");
+// });
 
-$(".close-detail-btn").on("click", function() {
-    $(this).parent('.content').attr('class',cls);
-});
+// $(".close-detail-btn").on("click", function() {
+//     $(this).parent('.content').attr('class',cls);
+// });
