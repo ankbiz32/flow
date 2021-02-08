@@ -333,6 +333,56 @@ section {
   border-color: white;
 }
 
+.events-sec .content.open {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #FFCC2A;
+  z-index: 5;
+  -webkit-animation: 1s open ease-in-out;
+          animation: 1s open ease-in-out;
+}
+
+@-webkit-keyframes open {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    border-radius: 56% 44% 60% 40% / 56% 56% 44% 44%;
+  }
+  99% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-radius: 56% 44% 60% 40% / 56% 56% 44% 44%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes open {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    border-radius: 56% 44% 60% 40% / 56% 56% 44% 44%;
+  }
+  99% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-radius: 56% 44% 60% 40% / 56% 56% 44% 44%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .gallery-sec {
   margin-top: 50px;
   position: relative;
@@ -751,10 +801,11 @@ footer hr {
 
 .about-main .quesImg {
   position: absolute;
-  right: -2px;
+  right: -6px;
   top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  height: 450px;
 }
 
 .about-main p {
@@ -950,7 +1001,6 @@ footer hr {
   /* Add arrows to the right contain (pointing left) */
   /* Fix the circle for contains on the right side */
   /* The actual content */
-  /* Media queries - Responsive timeline on screens less than 600px wide */
 }
 
 .program .overview {
@@ -1047,6 +1097,29 @@ footer hr {
           animation: 8s breathe3 infinite;
 }
 
+.program .approach .str-main {
+  margin-top: 100px;
+}
+
+.program .approach .str-main .str {
+  border: 1px solid #3BE6D9;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+}
+
+.program .approach .str-main .str h5 {
+  padding: 10px 20px;
+  background-color: #3BE6D9;
+  margin-top: -42px;
+  margin-bottom: 20px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.program .approach .str-main .str.str3 {
+  margin-bottom: 0;
+}
+
 .program .air {
   margin-top: 60px;
 }
@@ -1103,6 +1176,10 @@ footer hr {
 .program .how {
   margin-top: 180px;
   margin-bottom: 80px;
+}
+
+.program .structure + .how {
+  margin-top: 0;
 }
 
 .program .timeline {
@@ -1186,12 +1263,6 @@ footer hr {
   background-color: white;
   position: relative;
   border-radius: 6px;
-}
-
-@media screen and (max-width: 780px) {
-  .program {
-    /* Place the timelime to the left */
-  }
 }
 
 @media (max-width: 780px) {
@@ -1626,8 +1697,32 @@ footer hr {
     -webkit-animation: 15s breathe3 infinite;
             animation: 15s breathe3 infinite;
   }
+  .program .approach.structure .heading {
+    padding: 50px 20px;
+  }
+  .program .approach.structure .heading .bg-blob {
+    width: 55%;
+  }
   .program .approach p {
     margin-top: 80px;
+  }
+  .program .approach .str-main {
+    margin-top: 60px;
+  }
+  .program .approach .str-main .str {
+    border: 1px solid #3BE6D9;
+    margin-bottom: 60px;
+    padding: 15px 22px;
+    font-size: 14px;
+  }
+  .program .approach .str-main .str h5 {
+    padding: 8px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .program .approach .str-main .str.str3 {
+    margin-bottom: 90px;
   }
   .program .air {
     margin-top: 0px;
