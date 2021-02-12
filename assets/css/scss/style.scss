@@ -11,6 +11,19 @@ body {
     font-family: "poppins" , 'Segoe UI', Tahoma, Verdana, sans-serif;
     overflow-x: hidden;
 }
+.bg-yellow{
+    background-color: #FFCC2A !important;
+}
+.modal{
+    padding-right: 0 !important;
+}
+.modal-header{
+    border: none;
+}
+.modal-content, .modal-body{
+    border-radius: 10px;
+}
+
 button{
     outline: none !important;
 }
@@ -267,20 +280,19 @@ section{
             opacity: 0.8;
         }
         .sec-btn{
-            outline: none !important;
-            border: none;
             margin-bottom: 20px !important;
             color: black;
             border-color: black;
             padding: 5px 15px;
             font-size: 12px;
+            background: transparent;
             &:hover{
                 border-color: white;
+                background-color: white;
             }
         }
     }
 }
-
 
 .events-sec .content.open{
     position: fixed !important;
@@ -302,7 +314,10 @@ section{
     100%  { transform:scale(1) }
 }
 
-
+.events-sec.subpage{
+    margin-bottom: 90px;
+    margin-top: 120px;
+}
 
 
 .gallery-sec{
@@ -723,6 +738,11 @@ footer{
             }
             a{
                 text-decoration: none !important;
+                color: #06d6c2;
+                transition: 0.3s;
+                &:hover{
+                    color: #146a61;
+                }
             }
         }
     }
@@ -1543,6 +1563,10 @@ footer{
             }
         }
     
+    }
+
+    .events-sec.subpage{
+        margin-top: 0px;
     }
 
     // .content.open{

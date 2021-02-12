@@ -40,9 +40,10 @@
 </head>
 <body>
     
-    <header class="py-4">
+    <header class="py-4 blur">
+        <div class="blur-bg" id="blurbg"></div>
         <div class="container wrapper d-flex justify-content-between align-items-center">
-            <a href="" class="logo">
+            <a href="index.html" class="logo">
                 <img src="./assets/images/flow-logo.png" alt="" height="90">
             </a>
             <input type="checkbox" id="navcheck" role="button" title="menu">
@@ -55,12 +56,36 @@
                 <h5 class="menu-txt-2">Close</h5>
             </label>
             <nav id="menu">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="#">EVENTS</a>
-                <a href="#">PROGRAMS</a>
-                <a href="#">BLOG</a>
-                <a href="#">CONTACT</a>
+                <a href="index.html" class="main-link">HOME</a>
+                <a href="about.html" class="main-link">ABOUT</a>
+                <a href="events.html" class="main-link">EVENTS</a>
+                <div class="btnDrop-con">
+                    <a onclick="openDrop()" class="btnDrop">
+                        PROGRAMS
+                        <i class="fa fa-caret-down fa-sm"></i>
+                        <div class="openDrop" id="openDrop">
+                            <a href="program-flow.html" class="drop-item d-flex flex-nowrap sp my-0">
+                                <img src="./assets/images/stuProg.svg" alt="" height="50" class="mr-2">
+                                <span>
+                                    <strong>Free To Learn Our Way (FLOW)</strong>
+                                    <br>
+                                    <span class="text-muted">Program for students</span>
+                                </span>
+                            </a>
+                            <hr>
+                            <a href="program-wolf.html" class="drop-item d-flex flex-nowrap sp my-0">
+                                <img src="./assets/images/teacProg.svg" alt="" height="50" class="mr-2">
+                                <span>
+                                    <strong> Workshops On Learning & Facilitation (WOLF) </strong>
+                                    <br>
+                                    <span class="text-muted">Program for teachers</span>
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="main-link">BLOG</a>
+                <a href="contact.html" class="main-link">CONTACT</a>
             </nav>
         </div>
     </header>
@@ -98,9 +123,9 @@
                 <!-- <div class="col-sm-1"></div> -->
                 <div class="col-sm-7 mt-sm-0 mt-5 content-con">
                     <div class="content">
-                        <h2 class="mb-3">Flow is here</h2>
+                        <h2 class="mb-3">Flow is... here</h2>
                         <p class="mb-4">Flow began with an idea of a world with a vision of kinder kids, emotionally learned beings, socially inclusive students with a sense of community spirit, humane communication, happier folks, facilitating We(s) in the world of I(s) and of people in touch with their inner world with all of its landscapes, flowers, dreams and power. With research of over 1 year, we have wrapped it all up in our program,' Free to Learn Our Way'</p>
-                        <a href="about.html" class="sec-btn">KNOW MORE</a>
+                        <a href="about.html" class="sec-btn">READ MORE</a>
                     </div>
                 </div>
             </div>
@@ -112,48 +137,31 @@
             <div class="row">
                 <div class="col-sm-2 heading">
                     <h1>CURRENT EVENTS</h1>
-                    <a href="#" class="sec-btn">SEE ALL</a>
+                    <a href="events.html" class="sec-btn">SEE ALL</a>
                 </div>
                 <div class="col-sm-10">
                     <div class="row justify-content-between">
                         <div class="col-sm-5 mb-4 content">
                             <div class="blob-bg">
                             </div>
-                            <h4>Webinar 1</h4>
-                            <p class="mb-2">Live webinar for teachers & students.</p>
-                            <small class="d-block"><i class="fa fa-map-marker-alt"></i> Raipur</small>
-                            <small class="d-block mt-1"><i class="fa fa-calendar-alt"></i> 29-01-2021</small>
-                            <small class="d-block mt-1 close-detail-btn"> Close</small>
-                            <button type="button" class="sec-btn d-inline-block mt-4 mb-3 detail-btn" data-toggle="modal" data-target="#exampleModalCenter">
-                                Details
+                            <h4>Workshop</h4>
+                            <p class="mb-2">Happiness and Well-being Workshop</p>
+                            <small class="d-block"><i class="fa fa-map-marker-alt"></i> B.P Pujari English Medium School (Raipur) </small>
+                            <small class="d-block mt-1"><i class="fa fa-calendar-alt"></i> 31st January 2021</small>
+                            <button type="button" class="sec-btn d-inline-block mt-4 mb-3" data-toggle="modal" data-target="#event2">
+                                DETAILS
                               </button>
                         </div>
                         <div class="col-sm-5 mb-4 content">
                             <div class="blob-bg">
                             </div>
-                            <h4>Webinar 2</h4>
-                            <p class="mb-2">Live webinar for teachers & students.</p>
-                            <small class="d-block"><i class="fa fa-map-marker-alt"></i> Raipur</small>
-                            <small class="d-block mt-1"><i class="fa fa-calendar-alt"></i> 29-01-2021</small>
-                            <a href="#"  class="sec-btn d-inline-block mt-4 mb-3 detail-btn">DETAILS </a>
-                        </div>
-                        <div class="col-sm-5 mb-4 content">
-                            <div class="blob-bg">
-                            </div>
-                            <h4>Webinar 3</h4>
-                            <p class="mb-2">Live webinar for teachers & students.</p>
-                            <small class="d-block"><i class="fa fa-map-marker-alt"></i> Raipur</small>
-                            <small class="d-block mt-1"><i class="fa fa-calendar-alt"></i> 29-01-2021</small>
-                            <a href="#"  class="sec-btn d-inline-block mt-4 mb-3 detail-btn">DETAILS </a>
-                        </div>
-                        <div class="col-sm-5 mb-4 content">
-                            <div class="blob-bg">
-                            </div>
-                            <h4>Webinar 4</h4>
-                            <p class="mb-2">Live webinar for teachers & students.</p>
-                            <small class="d-block"><i class="fa fa-map-marker-alt"></i> Raipur</small>
-                            <small class="d-block mt-1"><i class="fa fa-calendar-alt"></i> 29-01-2021</small>
-                            <a href="#"  class="sec-btn d-inline-block mt-4 mb-3 detail-btn">DETAILS </a>
+                            <h4>Program launch</h4>
+                            <p class="mb-2">Free to Learn our Way program Launch</p>
+                            <small class="d-block"><i class="fa fa-map-marker-alt"></i> TBA (Jagdalpur)</small>
+                            <small class="d-block mt-1"><i class="fa fa-calendar-alt"></i> 6th February 2021</small>
+                            <button type="button" class="sec-btn d-inline-block mt-4 mb-3" data-toggle="modal" data-target="#eventModal">
+                                DETAILS
+                              </button>
                         </div>
                     </div>
                 </div>
@@ -171,12 +179,15 @@
             <div class="row">
                 <div class="col-sm-2 heading">
                     <h1>OUR GALLERY</h1>
-                    <a href="#" class="sec-btn">SEE ALL</a>
+                    <!-- <a href="#" class="sec-btn">SEE ALL</a> -->
                 </div>
                 <div class="col-sm-10">
                     <div class="row no-gutters content">
-                        <a href="./assets/images/12.jpeg" class="col-sm-4 spotlight">
+                        <!-- <a href="./assets/images/12.jpeg" class="col-sm-4 spotlight">
                             <img src="./assets/images/12.jpeg" alt="">
+                        </a> -->
+                        <a href="./assets/images/12.jpeg" class="col-sm-4 spotlight">
+                            <iframe src="https://www.youtube.com/embed/pZATNcM3yQY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </a>
                         <a href="./assets/images/2.jpeg" class="col-sm-4 spotlight">
                             <img src="./assets/images/2.jpeg" alt="">
@@ -387,17 +398,17 @@
                         <div class="col-sm-6 ">
                             <div class="row flex-nowrap">
                                 <div class="">
-                                   <a href="">
+                                   <a target="_blank" href="https://www.facebook.com/FlowMeNow/">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.785 408.788">
                                             <path id="facebook" d="M353.7,0H55.087A55.085,55.085,0,0,0,0,55.085V353.7a55.084,55.084,0,0,0,55.085,55.085H202.362l.251-146.078H164.662a8.954,8.954,0,0,1-8.954-8.92l-.182-47.087a8.955,8.955,0,0,1,8.955-8.989h37.882v-45.5c0-52.8,32.247-81.55,79.348-81.55h38.65a8.955,8.955,0,0,1,8.955,8.955v39.7a8.955,8.955,0,0,1-8.95,8.955l-23.719.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285a8.954,8.954,0,0,1,8.892,10.009l-5.581,47.087a8.955,8.955,0,0,1-8.892,7.9H266.323l-.251,146.078H353.7A55.084,55.084,0,0,0,408.787,353.7V55.085A55.086,55.086,0,0,0,353.7,0Z" transform="translate(-0.002)" />
                                         </svg>
                                     </a>
 
-                                   <a href="">
+                                   <a target="_blank"  href="https://www.instagram.com/flowmenow.co/">
                                         <svg viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm-117.40625 395.996094c-77.195312 0-139.996094-62.800782-139.996094-139.996094s62.800782-139.996094 139.996094-139.996094 139.996094 62.800782 139.996094 139.996094-62.800782 139.996094-139.996094 139.996094zm143.34375-246.976563c-22.8125 0-41.367188-18.554687-41.367188-41.367187s18.554688-41.371094 41.367188-41.371094 41.371094 18.558594 41.371094 41.371094-18.558594 41.367187-41.371094 41.367187zm0 0"/><path d="m256 146.019531c-60.640625 0-109.980469 49.335938-109.980469 109.980469 0 60.640625 49.339844 109.980469 109.980469 109.980469 60.644531 0 109.980469-49.339844 109.980469-109.980469 0-60.644531-49.335938-109.980469-109.980469-109.980469zm0 0"/><path d="m399.34375 96.300781c-6.257812 0-11.351562 5.09375-11.351562 11.351563 0 6.257812 5.09375 11.351562 11.351562 11.351562 6.261719 0 11.355469-5.089844 11.355469-11.351562 0-6.261719-5.09375-11.351563-11.355469-11.351563zm0 0"/></svg>
                                    </a>
 
-                                   <a href="">
+                                   <a target="_blank"  href="https://www.linkedin.com/company/flowmenow">
                                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/></svg>  
                                    </a>
                                 </div>
@@ -409,13 +420,13 @@
                     <h5 class="mb-sm-4 mb-3">QUICK LINKS :</h5>
                     <div class="row">
                         <a href="index.html" class="col-4 mb-2">Home</a>
-                        <a class="col-4 mb-2">Events</a>
-                        <a class="col-4 mb-2">Privacy Policy</a>
-                        <a href="about.html" class="col-4 mb-2">About us</a>
-                        <a class="col-4 mb-2">Contact</a>
-                        <a class="col-4 mb-2">Gallery</a>
-                        <a class="col-4 mb-2">Programs</a>
+                        <a href="events.html" class="col-4 mb-2">Events</a>
+                        <a href="about.html" href="about.html" class="col-4 mb-2">About us</a>
+                        <a href="contact.html" class="col-4 mb-2">Contact</a>
+                        <!-- <a class="col-4 mb-2">Gallery</a> -->
+                        <!-- <a class="col-4 mb-2">Programs</a> -->
                         <a class="col-4 mb-2">Site map</a>
+                        <!-- <a href="privacy-policy.html" class="col-4 mb-2">Privacy Policy</a> -->
                     </div>
                 </div>
             </div>
@@ -433,26 +444,68 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+    <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <div class="modal-body bg-yellow p-sm-5 p-4">
+                
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
+              <h3 class="mb-4 pr-sm-2 pr-4">Free to Learn Our Way Program Launch</h3>
+              <p class="mb-1">Venue &nbsp;: <strong>&nbsp;TBA (Jagdalpur)</strong></p>
+            <p class="mt-0">Date &emsp;:  <strong>&nbsp;6th February 2021</strong></p>
+            <p>
+                FLOW invites all the principals and coordinators of all the renowned schools of Jagdalpur to experience the program and get a glimpse of the journey that we are to embark on. FLOW began with a question, ‘What was something that was not a part of my education, but I wish it was!’, and from then on, we are constantly striving to serve the future generations by adding every possible element of life that is of utmost importance.
+                <br>
+                FLOW does not only cater to one side of the coin, which is why we have also addressed the needs of the facilitators through the WOLF initiative program (Workshop on Learning and Facilitation) which is a mirror image of ‘FLOW’ as students are a mirror reflection of the teachers that tutor them for life. <br>
+                The WOLF initiative program was created with an intent to provide the teachers an underpinning insight about purposeful teaching methods, soft skills development, lesson planning, phonetics, and work-life balance etc.  We assure you these sessions cover just the tip of the iceberg.
+                <br>
+                The entire team at FLOW will be honored by your presence and we sincerely await your arrival. To get in touch with us and be a part of our program launch, kindly register at the link given below:
+            </p>
+            
             </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="event2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-body bg-yellow p-sm-5 p-4">
+                
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h3 class="mb-4">Happiness and Well-being Workshop</h3>
+              <p class="mb-1">Venue &nbsp;: <strong>&nbsp;B.P Pujari English Medium School (Raipur)</strong></p>
+            <p class="mt-0">Date &emsp;:  <strong>&nbsp;31st January 2021</strong></p>
+            <p>
+                Flow is all set to deliver a fun-packed session on happiness and well-being, which aims at re-energizing everyone’s waning spirits after having experienced a long period of isolation. This training program projects at giving new insights into the concept of happiness through various activities. Not only this, but every person attending the program is sure to get a space to explore, reflect and share their own personal ideas of happiness. Adding to the above there will be sharing of tools that the teachers can carry for lifetime to reorient and prioritize different aspects of their lives and well-being. 
+                <br><br>
+                What to expect? <br>
+                -	Experiential learning <br>
+                -	Sharing of thoughts <br>
+                -	Fun packed activities <br>
+                -	Tips and tricks for overall well-being.  <br>
+                -	Timeless tools to navigate life <br>
+                <br>
+                Tap into the Flow for more fun and exciting events.
+                <br>
+                <br>
+                Facilitator's name:   Mr. Jenis Lunkad <br>
+                Co-facilitators:      Mr. Calvin Cubbins <br>
+                                     Mrs. Raveena Bhui 
+
+            </p>
+            
             </div>
           </div>
         </div>
       </div>
-    
+
     
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
