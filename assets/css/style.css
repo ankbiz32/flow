@@ -1353,6 +1353,14 @@ footer hr {
   border-radius: 10px;
   transition: 0.4s;
   overflow: hidden;
+  cursor: pointer;
+}
+.cat-link, .tag-list a{
+  transition: 0.3s;
+  color: inherit;
+}
+.cat-link:hover,.tag-list a:hover{
+  color:#3BE6D9
 }
 
 .all-blogs .blog-card:hover{
